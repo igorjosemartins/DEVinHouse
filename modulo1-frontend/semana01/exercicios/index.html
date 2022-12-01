@@ -10,7 +10,8 @@
   <link rel="icon" href="icon.png">
 
   <style>
-    h1 {
+    
+    .title {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 20px;
       color:purple;
@@ -21,29 +22,100 @@
     }
 
     body {
+      margin: 0;
       background-color: rgb(192, 192, 192);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
-    p {
+    footer {
+      background-color: #333;
+      color: white;
+      width: 100%;
+      margin-top: auto;
+      padding: 10px;
+    }
+
+    .paragraph {
       font-size: 14px;
     }
 
-    button {
+    #but-img {
       padding: 10px;
       border: solid 2px black;
       margin-top: 20px;
       border-radius: 10px;
     }
+
+    #icon {
+      float: left;
+      padding: 10px;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: justify;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
   </style>
 </head>
 
 <body>
-  <h1>Semana 1</h1>  
-  <hr>
-  <p>
-    Este é o resultado do primeiro exercício <br> da primeira semana <br> do curso DEVinHouse. <br> 😁👍
-  </p>
 
-  <a href="imagens.html"><button><img src="icon-img.png" alt=""></button></a>
+  <div class="navbar">
+    <img src="icon.png" alt="page icon" id="icon">
+    <a href="index.html">Home</a>
+    <a href="imagens.html">Imagens</a>
+  </div>
+
+  <div class="main">
+
+    <br>
+    <br>
+    <br>
+    
+    <h1 class="title">Semana 1</h1>  
+    <hr>
+    <p class="paragraph">
+    Este é o resultado do primeiro exercício <br> da primeira semana <br> do curso DEVinHouse. <br> 😁👍
+    </p>
+
+    <a href="imagens.html"><button id="but-img"><img src="icon-img.png" alt=""></button></a>
+  </div>
+  
+  <div class="video">
+    <h2>Aprenda CSS em 20 minutos</h2>
+
+    <h3>Neste video será mostrado propriedades básicas do CSS como cores, sintaxe, classes, ids, box model, etc.</h3>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1PnVor36_40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 </body>
+
+<footer>
+  <div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem molestias, veniam ex eum iste velit non quasi eius assumenda voluptatum accusantium qui, commodi, neque aut veritatis eveniet doloremque inventore praesentium. 
+    </p>
+  </div>
+</footer>
 </html>
