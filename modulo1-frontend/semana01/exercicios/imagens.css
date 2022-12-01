@@ -1,0 +1,10 @@
+body {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
