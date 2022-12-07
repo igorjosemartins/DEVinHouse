@@ -2,19 +2,35 @@
 // enquanto o número for diferente de -1, quando digitado -1 pare de exibir o prompt
 // e exiba através de um alert o resultado da soma dos números digitados.
 
+// sem "do"
+
+// var number = 0
+
+// var result = 0
+
+// while(number != -1) {
+  
+//   number = prompt("Digite um número para ser somado:")
+
+//   if (number == -1) {
+//     alert(`O resultado das somas é: ${result}`)
+//   }
+  
+//   result += Number(number)
+// }
+
+
+// com "do"
 var number = 0
 
 var result = 0
 
-while(number != -1) {
-  
+do {
+
+  result += Number(number)
+
   number = prompt("Digite um número para ser somado:")
 
-  if (number == -1) {
-    alert(`O resultado das somas é: ${result}`)
-  }
-  
-  result += Number(number)
-}
+}while(number != -1)
 
-
+alert(`O resultado das somas é: ${result}`)
