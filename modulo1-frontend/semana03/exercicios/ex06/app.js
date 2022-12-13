@@ -6,7 +6,7 @@ const verificaPalindromo = (text) => {
   // text -> array
   var splitText = text.split("")
 
-  // array -> reverso
+  // inverte a string
   var reverseArray = splitText.reverse()
 
   // array -> text
